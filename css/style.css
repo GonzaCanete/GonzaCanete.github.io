@@ -1,0 +1,352 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 5;
+}
+
+.container-fluid {
+  background-color: black;
+  border-top: 5px solid orange;
+  border-bottom: 5px solid orange;
+  margin-top: -1vh;
+}
+.container-fluid .collapse {
+  justify-content: center;
+  align-items: center;
+}
+.container-fluid .collapse a {
+  color: orange;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-family: "Lato", sans-serif;
+  text-decoration: double;
+}
+.container-fluid .collapse .nav-link:hover {
+  background-color: orange;
+  color: black;
+}
+.container-fluid .navbar-brand {
+  color: orange;
+  font-size: 35px;
+  text-transform: uppercase;
+  font-family: "Lato", sans-serif;
+  text-decoration: double;
+}
+.container-fluid .navbar-brand:hover {
+  background-color: orange;
+  color: black;
+}
+.container-fluid button {
+  color: orange;
+  background-color: orange;
+}
+
+.navbar-toggler {
+  background-color: orange;
+}
+
+.carousel-inner {
+  margin-top: -1vh;
+  height: 50vh;
+}
+.carousel-inner img {
+  height: 50vh;
+}
+
+.grid_container {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-areas: "left center right";
+}
+.grid_container #leftAside {
+  grid-area: left;
+}
+.grid_container #mainColumn {
+  grid-area: center;
+  background-color: rgb(239, 238, 238);
+  margin-top: 3vh;
+  border-radius: 5px;
+  padding: 10px;
+}
+.grid_container #rightAside {
+  grid-area: right;
+}
+
+article h1 {
+  font-size: 30px;
+  text-align: center;
+  margin-top: 3vh;
+  margin-bottom: 5vh;
+  font-family: "Montserrat", sans-serif;
+  text-decoration: underline 3px solid orange;
+  text-transform: uppercase;
+}
+
+.article_container {
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  column-gap: 1vw;
+  margin-top: 10vh;
+}
+.article_container a {
+  color: rgb(30, 30, 30);
+  text-decoration: none;
+}
+.article_container .firstColumn img {
+  width: 100%;
+  border-radius: 10px;
+}
+.article_container .firstColumn p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+}
+.article_container .firstColumn iframe {
+  width: 100%;
+  height: 25%;
+  border-radius: 10px;
+}
+.article_container .firstColumn img:hover {
+  opacity: 0.7;
+  transition: opacity 1s;
+}
+.article_container .secondColumn img {
+  width: 100%;
+  border-radius: 10px;
+}
+.article_container .secondColumn p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+}
+.article_container .secondColumn img:hover {
+  opacity: 0.7;
+  transition: opacity 1s;
+}
+.article_container h2 {
+  font-size: 25px;
+  text-align: center;
+  font-style: italic;
+}
+.article_container h2:hover {
+  text-decoration: underline 3px solid orange;
+  transition: text-decoration 1s;
+}
+.article_container h3 {
+  font-size: 15px;
+  text-align: center;
+  font-weight: bold;
+  text-decoration: underline 3px solid orange;
+}
+
+footer {
+  width: 100vw;
+  height: 20vh;
+  background-color: black;
+  padding: 10px;
+  margin-top: 5vh;
+}
+footer h3 {
+  color: orange;
+  text-align: center;
+  font-size: 30px;
+  font-family: "Montserrat", sans-serif;
+}
+footer h4 {
+  color: orange;
+  text-align: center;
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+}
+
+@media (max-width: 991px) {
+  #carouselExampleInterval {
+    visibility: hidden;
+  }
+  .grid_container {
+    grid-template-columns: 1fr;
+    margin-top: -50vh;
+  }
+}
+@media (max-width: 991px) and (max-width: 391px) {
+  .article_container {
+    grid-template-columns: 1fr;
+  }
+}
+.card_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  padding: 1vw;
+}
+.card_container img {
+  border-radius: 5px;
+}
+.card_container img:hover {
+  transform: scale(1.1, 1.1);
+  transition: transform 1s;
+}
+.card_container .card {
+  width: 18rem;
+}
+.card_container .card-body h5 {
+  font-size: 30px;
+  text-align: center;
+  text-decoration: underline 3px solid orange;
+}
+.card_container .card-body h6 {
+  text-align: center;
+  font-size: 15px;
+  color: rgb(201, 196, 196);
+}
+.card_container .card-body p {
+  font-family: "Montserrat", sans-serif;
+}
+
+.month {
+  text-align: center;
+  font-size: 25px;
+  text-decoration: underline 3px solid orange;
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 5vh;
+}
+
+@media (max-width: 991px) {
+  .card_container {
+    width: 90vw;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+    margin-left: 23vw;
+  }
+  .card_container .card {
+    width: 50vw;
+  }
+  #leftAside {
+    width: 0;
+    height: 0;
+  }
+  #mainColumn {
+    width: 100vw;
+  }
+}
+.img_container {
+  margin-top: 2vh;
+  position: relative;
+}
+.img_container img {
+  width: 100%;
+  border-radius: 10px;
+  height: 30vh;
+  image-rendering: crisp-edges;
+  box-shadow: inset -20px -20px 20px black;
+}
+.img_container h2 {
+  font-size: 40px;
+  font-family: "Tilt Neon", cursive;
+  position: absolute;
+  bottom: 0;
+  color: white;
+  width: 90%;
+  text-decoration: underline 3px solid orange;
+  margin-left: 2vw;
+  background-color: rgba(41, 40, 40, 0.515);
+}
+
+.p_analisis {
+  font-size: 15px;
+  font-family: "Montserrat", sans-serif;
+  margin-top: 3vh;
+}
+
+#final {
+  border-bottom: 5px solid orange;
+  margin-bottom: 10vh;
+}
+
+#register {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 30px;
+  text-transform: uppercase;
+  text-decoration: underline 3px solid orange;
+  margin-top: 30vh;
+}
+
+.form-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.form-box .inputBox {
+  position: relative;
+  margin: 30px 0;
+  width: 310px;
+  border-bottom: 2px solid orange;
+}
+.form-box .inputBox label {
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  transform: translateY(-50%);
+  pointer-events: none;
+  transition: 0.5s;
+}
+.form-box .inputBox input {
+  width: 100%;
+  height: 50px;
+  background: transparent;
+  border: none;
+  outline: none;
+  padding: 0 35px 0 5px;
+}
+.form-box .inputBox input:focus ~ label,
+.form-box .inputBox input:valid ~ label {
+  top: -5px;
+}
+.form-box .inputBox ion-icon {
+  position: absolute;
+  right: 8px;
+  top: 20px;
+}
+.form-box .forget {
+  margin: -15px 0 15px;
+  display: flex;
+  justify-content: center;
+}
+.form-box button {
+  width: 100%;
+  height: 40px;
+  border-radius: 40px;
+  background-color: orange;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-weight: 600;
+}
+.form-box .register {
+  text-align: center;
+  margin: 25px 0 10px;
+}
+.form-box .register a {
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+}
+
+.img_ranking_container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.img_ranking_container img {
+  width: 40%;
+  height: 60vh;
+}
+
+/*# sourceMappingURL=style.css.map */

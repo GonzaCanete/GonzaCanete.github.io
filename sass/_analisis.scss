@@ -1,0 +1,36 @@
+
+.img_container {
+    margin-top: 2vh;
+    position: relative;
+    img {
+        width: 100%;
+        border-radius: 10px;
+        height: 30vh;
+        image-rendering: crisp-edges;
+        box-shadow: inset -20px -20px 20px black;
+    }
+    
+    h2{
+        font-size: 40px;
+        font-family: 'Tilt Neon', cursive;
+        position: absolute;
+        bottom: 0;
+        color: white;
+        width: 90%;
+        text-decoration: underline 3px solid orange;
+        margin-left: 2vw;
+        background-color: rgba(41, 40, 40, 0.515);
+        
+    }
+}
+
+.p_analisis {
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 3vh;
+    
+}
+#final {
+    border-bottom: 5px solid orange;
+    margin-bottom: 10vh;
+}
